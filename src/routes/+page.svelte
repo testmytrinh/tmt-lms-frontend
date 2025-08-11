@@ -1,9 +1,12 @@
-<script>
-    import Popover from "$lib/components/Popover/Popover2.svelte";
+<script lang="ts">
+	import Hero from "$lib/components/landing/Hero.svelte";
+	import NewsHighlights from "$lib/components/landing/NewsHighlights.svelte";
+	import GameGrid from "$lib/components/landing/GameGrid.svelte";
 </script>
 
-<Popover>
-    {#snippet label()}
-        <h4>Label</h4>
-    {/snippet}
-</Popover>
+<div>
+	<Hero />
+	<NewsHighlights />
+	<GameGrid />
+</div>
+

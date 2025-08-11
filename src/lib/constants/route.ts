@@ -12,6 +12,7 @@ export const ROUTE = {
 	ASK: "/ask",
 	FORGOT: "/forgot",
 	RESET: "/reset",
+	GITHUB: "https://github.com/testmytrinh",
 };
 
 export const PUBLIC_ROUTES = [
@@ -23,6 +24,31 @@ export const PUBLIC_ROUTES = [
 	`^${ROUTE.MODULES}/.*`,
 	`^${ROUTE.COURSES}/.*`,
 	"/404",
+];
+
+export const DEFAULT_ROUTES_ON_NAV = [
+	{ path: ROUTE.COURSES, label: "COURSES" },
+	{ path: ROUTE.MODULES, label: "MODULES" },
+	{ path: ROUTE.FOR_TEACHERS, label: "FOR TEACHERS" },
+	{ path: ROUTE.ASK, label: "ASK" },
+];
+
+export const ROUTES_ON_FOOTER = [
+	{
+		title: "Platform",
+		links: [
+			{ label: "Courses", path: ROUTE.COURSES },
+			{ label: "Modules", path: ROUTE.MODULES },
+			{ label: "For Teachers", path: ROUTE.FOR_TEACHERS },
+		],
+	},
+	{
+		title: "Resources",
+		links: [
+			{ label: "Github", path: ROUTE.GITHUB },
+			{ label: "Ask", path: ROUTE.ASK },
+		],
+	}
 ];
 
 export const ROUTES_TO_HIDE_NAV = [
